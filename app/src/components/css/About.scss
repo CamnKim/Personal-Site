@@ -1,0 +1,53 @@
+//https://devicon.dev
+$img-border: 2px;
+$img-border-color: #0affba;
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 1rem;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .nameTitle {
+    color: #0affba;
+  }
+
+  .descriptor {
+    color: #f72585;
+  }
+
+  .introduction {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    max-width: 75%;
+  }
+
+  .hex {
+    width: 346.41px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+    background-color: $img-border-color;
+    position: relative;
+    clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+
+    .hexBorder {
+      position: absolute;
+      top: $img-border;
+      left: $img-border;
+      width: 346.41px - ($img-border * 2);
+      height: 300px - ($img-border * 2);
+      clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

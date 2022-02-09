@@ -1,0 +1,48 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css');
+@import '../../variables';
+
+.contact {
+  text-align: center;
+  background-color: $secondary-background;
+  padding: 1rem;
+  z-index: -1;
+
+  .email {
+    margin-top: 2rem;
+    a {
+      font-size: 3rem;
+      i {
+        color: $primary-accent;
+        border-color: $primary-accent;
+        border-style: solid;
+        padding: 3px 4rem;
+        border-radius: 15px;
+        &:hover {
+          color: $secondary-accent;
+          border-color: $secondary-accent;
+          transition: all 0.5s ease;
+        }
+      }
+    }
+  }
+
+  .linkList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    .linkItems {
+      margin: 1rem;
+      margin-top: 2rem;
+      a {
+        font-size: 2.5rem;
+
+        i:hover {
+          color: $primary-accent;
+          transition: color 0.5s ease;
+        }
+      }
+    }
+  }
+}

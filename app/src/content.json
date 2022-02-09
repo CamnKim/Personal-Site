@@ -1,3 +1,30 @@
 {
-  "introduction": "I'm a fourth year computer science major at Kent State University class of 2022 with a minor in business. I have experience in frontend web development and indie game development. My areas of interest include frontend web development and extended reality"
+  "introduction": "I'm a fourth year computer science major at Kent State University class of 2022 with a minor in business. I have experience in frontend web development and indie game development. My areas of interest include frontend web development and extended reality",
+  "portfolio": [
+    {
+      "images": ["eris1.png", "eris2.png"],
+      "title": "ERIS Version Control Integration",
+      "description": "ERIS was my senior capstone project where we learned to work with stakeholders to develop an application. ERIS is SVN integration into Discord that allows you to customize notifications for repositories, allow for remote control of your working repository, and allows for some automation with auto updating. It consisted of 3 parts, a discord bot, a server application that kept the repositories and database, and a client application that runs on the user’s computer. I designed and implemented the client side application that handles repository settings, executing SVN commands on the clients computer, logging of commands executed on the client,  and communication with the server system. We implemented this for RoviSys to allow them to have an easier time working with their legacy SVN repositories.",
+      "git": "https://github.com/CamnKim/eris"
+    },
+    {
+      "images": ["covidStats1.png", "covidStats2.png"],
+      "title": "Covid Stats",
+      "description": "Covid stats is a site that tracks US Covid-19 statistics on a national and per state basis. It takes use of the API  provided by The COVID Tracking Project. It tracks Individual states' stats on number of positive cases, number of people on a ventilator, number of dead, and number of people in the ICU. This data is visualized in a US state map. The app also displays these stats over time on a line graph and on a national level. The app was created using React, Bootstrap, ChartJS, and Google Charts.",
+      "git": "https://github.com/CamnKim/covid-stats"
+    },
+    {
+      "images": ["ricochet1.png", "ricochet2.png", "ricochet3.png"],
+      "title": "Ricochet",
+      "description": "Ricochet was my first game development project that I made for my intro to game programming class. It's a simple first person shooter with the added mechanic of bullets that ricochet off of walls. Creating the game was a big learning experience for me. I learned how to create a first person perspective and how to create simple enemy AI. The game was built in unity and uses free models from the asset store.",
+      "git": "https://github.com/CamnKim/Ricochet"
+    },
+    {
+      "images": ["SpaceSamurai_Test1.png"],
+      "title": "Space Samurai (WIP)",
+      "description": "Space Samurai is a virtual reality game that I am still currently developing using Unity3D and their XR Toolkit. The game has the player using a lightsaber to block on coming lasers being shot at the player from a robot that moves around to random locations in an arcade style of game. The longer you survive, the more points you get and the harder the game gets.",
+      "git": "https://github.com/CamnKim/SpaceSamurai"
+    }
+  ],
+  "contact": "I am currently looking for opprotunities for after I graduate in May 2022. Feel free to reach out to me if you have any questions, I'll try to get back to you as soon as I can!"
 }

@@ -1,25 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import '../../variables';
 
-$nav-color: #002129;
-$nav-hover: #2b7885;
-$text-color: #ccc;
-$nav-text-color: #0affba;
-$nav-hover-text: #0affba;
-
-* {
-  text-decoration: none;
-  color: $text-color;
-  font-family: 'Source Sans Pro', sans-serif;
+@media (max-width: 1024px) {
 }
-
 nav {
   background-color: $nav-color;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  //text-align: center;
   padding: 0;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   .navItems {
     padding: 0.5rem;
@@ -31,15 +23,16 @@ nav {
     border: none;
     background-color: $nav-color;
     margin-top: 0.25rem;
+    z-index: 2;
 
     i {
-      color: $nav-text-color;
+      color: $primary-accent;
     }
 
     &:hover {
       background-color: $nav-hover;
       i {
-        color: $nav-hover-text;
+        color: $primary-accent;
       }
     }
   }
@@ -47,7 +40,7 @@ nav {
   .navTitle {
     margin-left: 1rem;
     font-size: 2rem;
-    color: $nav-text-color;
+    color: $primary-accent;
   }
 
   .navContent {
@@ -59,14 +52,33 @@ nav {
     overflow: hidden;
     background-color: $nav-color;
     text-align: right;
+    z-index: 3;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    .resume {
+      display: none;
+    }
+
     li {
       padding: 0.5rem;
       margin: 0;
       padding-right: 1rem;
+      i {
+        display: none;
+      }
+      p {
+        margin: 0.5rem;
+        padding: 0;
+      }
       &:hover {
         background-color: $nav-hover;
         a {
-          color: $nav-hover-text;
+          p {
+            color: $primary-accent;
+          }
         }
       }
     }
@@ -76,5 +88,15 @@ nav {
     flex-direction: column;
     max-height: 400px;
     padding: 0;
+  }
+  .personalLinks {
+    display: none;
+  }
+
+  .nav-scrolled {
+    color: $primary-accent;
+    &:hover {
+      color: $secondary-accent;
+    }
   }
 }

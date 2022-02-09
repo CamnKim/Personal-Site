@@ -1,26 +1,30 @@
-//https://devicon.dev
-$img-border: 2px;
-$img-border-color: #0affba;
+@import '../../variables';
 
-section {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+$img-border: 2px;
+
+.About {
+  width: 100%;
   padding: 1rem;
+  position: relative;
+  z-index: -2;
+  background-image: url('../../assets/blob-scene-haikei.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   h1 {
     font-size: 3rem;
   }
 
   .nameTitle {
-    color: #0affba;
+    color: $primary-accent;
   }
 
   .descriptor {
-    color: #f72585;
+    color: $secondary-accent;
   }
 
   .introduction {
+    word-wrap: break-word;
     margin-top: 1rem;
     margin-bottom: 5rem;
     max-width: 75%;
@@ -31,9 +35,19 @@ section {
     height: 300px;
     margin: 0 auto;
     display: block;
-    background-color: $img-border-color;
+    background-color: $primary-accent;
     position: relative;
     clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    &:hover {
+      background-color: $secondary-accent;
+      transition: background-color 0.5s ease;
+      .hexBorder {
+        img {
+          filter: grayscale(0%);
+          transition: filter 0.5s ease;
+        }
+      }
+    }
 
     .hexBorder {
       position: absolute;
@@ -44,9 +58,44 @@ section {
       clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
 
       img {
+        position: absolute;
         object-fit: cover;
         width: 100%;
         height: 100%;
+        filter: grayscale(100%);
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .About {
+    .contentWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .hex {
+        top: 50%;
+        float: left;
+        transform: translateY(-50%);
+      }
+      .introWrapper {
+        top: 50%;
+        transform: translateY(-25%);
+        width: calc(100% - 400px);
+        float: right;
+      }
+      .topPart {
+        height: auto;
+        top: 5rem;
+        width: 100%;
+        margin-bottom: 9rem;
+        margin-left: 5rem;
+        .nameTitle {
+        }
+        .descriptor {
+          margin-left: 15rem;
+        }
       }
     }
   }

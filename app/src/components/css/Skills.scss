@@ -1,0 +1,67 @@
+@import '../../variables';
+
+.Skills {
+  background-color: $secondary-background;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+
+  .SkillsTitle {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .skillsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    .skillCard {
+      //background-color: red;
+      width: auto;
+      padding: 1rem;
+
+      .skillHeader {
+        font-size: 1.5rem;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0;
+        width: auto;
+        padding: 0;
+        list-style-type: none;
+        li {
+          margin: 0;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          height: 3rem;
+          &:hover {
+            p {
+              color: $primary-accent;
+              transition: color 0.5s ease;
+            }
+            svg {
+              fill: $secondary-accent;
+              transition: fill 0.5s ease;
+            }
+          }
+
+          svg {
+            width: 2rem;
+            height: 2rem;
+            fill: $primary-accent;
+          }
+          p {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

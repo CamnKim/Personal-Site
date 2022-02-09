@@ -1,0 +1,125 @@
+@import '../../variables';
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.75);
+}
+.modal {
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  padding: 1rem 0;
+  background-color: $secondary-background;
+  border-radius: 10px;
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  transform: translateY(-50%);
+
+  .modalTitle {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .modalImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .desc {
+    margin: 1rem;
+  }
+
+  .github {
+    text-align: center;
+    font-size: 2rem;
+    i:hover {
+      color: $primary-accent;
+      transition: color 0.5s ease;
+    }
+  }
+
+  .carousel {
+    position: relative;
+
+    .caroRight {
+      right: 0;
+    }
+
+    .caroLeft,
+    .caroRight {
+      position: absolute;
+      z-index: 1001;
+      bottom: 50%;
+      transform: translateY(50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+
+      i {
+        background-color: transparent;
+      }
+
+      &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.75);
+        transition: background-color 0.25s ease;
+        i {
+          color: $primary-accent;
+          transition: color 0.25s ease;
+        }
+      }
+    }
+
+    .sliderWrapper {
+      overflow: hidden;
+      position: relative;
+      z-index: -1;
+    }
+    .imageWrapper {
+      display: flex;
+      flex-direction: row;
+      transition: transform 0.35s ease-in;
+    }
+    .bottomNav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      z-index: 1001;
+      bottom: 2%;
+
+      .dot {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        margin: 0.5rem;
+      }
+      .dot.active {
+        background-color: rgba($primary-accent, $alpha: 0.5);
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .modal {
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

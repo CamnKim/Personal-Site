@@ -1,10 +1,24 @@
-$background-main: #001014;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import 'variables';
 
 * {
   box-sizing: border-box;
+  position: relative;
+  text-decoration: none;
+  color: $text-color;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  z-index: 1;
 }
 
 body {
   margin: 0;
-  background-color: $background-main;
+  background-color: $main-background;
+  z-index: 1;
+}
+
+.contentWrapper {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }

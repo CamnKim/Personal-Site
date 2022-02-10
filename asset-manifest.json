@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Personal-Site/static/css/main.6c58f76f.css",
+    "main.css": "/Personal-Site/static/css/main.b4b43763.css",
     "main.js": "/Personal-Site/static/js/main.7313c0a7.js",
     "static/media/headshot.jpg": "/Personal-Site/static/media/headshot.0dc4e55a4648afc283c4.jpg",
     "static/media/ricochet2.png": "/Personal-Site/static/media/ricochet2.aa3217634870fb8c416f.png",
@@ -27,11 +27,11 @@
     "static/media/css.svg": "/Personal-Site/static/media/css.f152fa45fbfa7c4ef275cd3af33422f7.svg",
     "static/media/html.svg": "/Personal-Site/static/media/html.35ec2269ee404516b0baab172c26c203.svg",
     "static/media/unity.svg": "/Personal-Site/static/media/unity.ea38b2f49eb4ff646da0258b44be84be.svg",
-    "main.6c58f76f.css.map": "/Personal-Site/static/css/main.6c58f76f.css.map",
+    "main.b4b43763.css.map": "/Personal-Site/static/css/main.b4b43763.css.map",
     "main.7313c0a7.js.map": "/Personal-Site/static/js/main.7313c0a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c58f76f.css",
+    "static/css/main.b4b43763.css",
     "static/js/main.7313c0a7.js"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.af0158fe.css",
-    "main.js": "/static/js/main.e075b930.js",
+    "main.css": "/static/css/main.b7692c4a.css",
+    "main.js": "/static/js/main.5386777b.js",
     "static/media/headshot.jpg": "/static/media/headshot.0dc4e55a4648afc283c4.jpg",
     "static/media/ricochet2.png": "/static/media/ricochet2.aa3217634870fb8c416f.png",
     "static/media/covidStats1.png": "/static/media/covidStats1.f9ab93f8dba653b9d2d6.png",
@@ -10,7 +10,7 @@
     "static/media/SpaceSamurai_Test1.png": "/static/media/SpaceSamurai_Test1.d0359413afc38af4b9c9.png",
     "static/media/covidStats2.png": "/static/media/covidStats2.4ed7479eff22812ffabc.png",
     "static/media/eris1.png": "/static/media/eris1.1f7bf1ca4efa206a683e.png",
-    "static/media/resume.pdf": "/static/media/resume.e2e6654cf2789a772270.pdf",
+    "static/media/resume.pdf": "/static/media/resume.91c3d20b894d7ca95b0f.pdf",
     "static/media/eris2.png": "/static/media/eris2.2cd2a9ee5b3f8bb2ba46.png",
     "static/media/low-poly-grid-haikei.svg": "/static/media/low-poly-grid-haikei.061a2cdffc82a9401e30.svg",
     "static/media/materialize.svg": "/static/media/materialize.82f66db47e1bfbe4cde5b0d04188e73d.svg",
@@ -27,11 +27,11 @@
     "static/media/css.svg": "/static/media/css.f152fa45fbfa7c4ef275cd3af33422f7.svg",
     "static/media/html.svg": "/static/media/html.35ec2269ee404516b0baab172c26c203.svg",
     "static/media/unity.svg": "/static/media/unity.ea38b2f49eb4ff646da0258b44be84be.svg",
-    "main.af0158fe.css.map": "/static/css/main.af0158fe.css.map",
-    "main.e075b930.js.map": "/static/js/main.e075b930.js.map"
+    "main.b7692c4a.css.map": "/static/css/main.b7692c4a.css.map",
+    "main.5386777b.js.map": "/static/js/main.5386777b.js.map"
   },
   "entrypoints": [
-    "static/css/main.af0158fe.css",
-    "static/js/main.e075b930.js"
+    "static/css/main.b7692c4a.css",
+    "static/js/main.5386777b.js"
   ]
 }

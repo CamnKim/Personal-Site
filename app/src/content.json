@@ -1,5 +1,5 @@
 {
-  "introduction": "I'm a fourth year computer science major at Kent State University class of 2022 with a minor in business. I have experience in frontend web development and indie game development. My areas of interest include frontend web development and extended reality",
+  "introduction": "I'm a recent graduate of Kent State University class of 2022 with a B.S. in computer science and a minor in business. I have experience in frontend web development and indie game development. My areas of interest include frontend web development and extended reality",
   "portfolio": [
     {
       "images": ["eris1.png", "eris2.png"],
@@ -26,5 +26,5 @@
       "git": "https://github.com/CamnKim/SpaceSamurai"
     }
   ],
-  "contact": "I am currently looking for opprotunities for after I graduate in May 2022. Feel free to reach out to me if you have any questions, I'll try to get back to you as soon as I can!"
+  "contact": "I am currently looking for internships and full-time job opprotunities. Feel free to reach out to me if you have any questions, I'll try to get back to you as soon as I can!"
 }
